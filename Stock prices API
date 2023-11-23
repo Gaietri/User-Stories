@@ -1,0 +1,73 @@
+User Story 1: Basic Stock Price Retrieval
+
+Title: Retrieve Real-time Stock Price
+
+Story:
+As a financial analyst, I want to retrieve real-time stock prices for a given list of ticker symbols using our API.
+
+Acceptance Criteria:
+
+Single Ticker Price:
+The API should provide the current stock price for a single specified ticker symbol.
+The response should include the stock symbol, the latest price, and a timestamp.
+
+Multiple Ticker Prices:
+Users should be able to request real-time prices for multiple ticker symbols in a single API call.
+The response should include an array of stock symbols, corresponding prices, and timestamps.
+
+Currency Support:
+The API should support retrieving stock prices in different currencies.
+Users can specify the desired currency as part of the API request.
+
+Error Handling:
+The API should return clear error messages for invalid ticker symbols or other request issues.
+Errors should be accompanied by appropriate HTTP status codes.
+
+User Story 2: Historical Stock Price Data
+
+Title: Retrieve Historical Stock Prices
+
+Story:
+As a data analyst, I want to retrieve historical stock prices for a specific ticker symbol within a specified date range using our API.
+
+Acceptance Criteria:
+
+Date Range Selection:
+Users should be able to specify a start and end date to retrieve stock prices within a given time period.
+The API should return historical prices with timestamps.
+
+Granularity Options:
+Provide options for users to select the granularity of historical data (daily, weekly, monthly).
+The API should return historical prices based on the selected granularity.
+
+Adjusted Closing Prices:
+Include an option to retrieve adjusted closing prices, accounting for dividends and stock splits.
+Adjusted prices should be clearly identified in the API response.
+
+Data Format:
+The API response should provide historical stock prices in a structured format, such as JSON or CSV.
+Timestamps and corresponding prices should be included.
+
+User Story 3: Stock Price Comparison
+Title: Compare Stock Prices
+
+Story:
+As a portfolio manager, I want to compare the current stock prices of multiple companies to make informed investment decisions.
+
+Acceptance Criteria:
+
+Relative Comparison:
+Users should be able to request stock prices for a list of companies and compare them relative to each other.
+The API response should include a comparison of the stock prices.
+
+Percentage Change:
+The API should calculate and provide the percentage change in stock prices over a specified time period.
+Users can specify the time period for the percentage change calculation.
+
+Visualization Support:
+Include support for visualizing the stock price comparison, such as a chart or graph.
+The API should provide data in a format compatible with common visualization tools.
+
+Customizable Comparison Criteria:
+Allow users to customize the criteria for comparing stock prices, such as selecting specific date ranges or comparison metrics.
+The API response should reflect the customized criteria.
